@@ -5,11 +5,11 @@ menu = "going_deeper"
 weight = 103
 +++
 
-All of the previous guides used protocols that where requests and responses were
+All of the previous guides used protocols where requests and responses were
 comprised by a single message frame. In other words, the entire request and
 response data had to be buffered before parsing the value, in turn forcing the
 application to wait for all the data to be received before starting to
-processing the request.
+process the request.
 
 Sometimes it is possible to begin processing the request before all data has
 been received. For example, in HTTP, the application can start processing a
